@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "pitpatpot",
+	"version": "${version}",
+	"name": "PitPatPot",
+	"description": "I've been pet!",
+	"authors": [
+		"Nyastra"
+	],
+	"contact": {
+		"homepage": "https://github.com/Nyastra/PitPatPot/",
+		"sources": "https://github.com/Nyastra/PitPatPot"
+	},
+	"license": "LGPL-3.0-or-later",
+	"icon": "assets/pitpatpot/pitpatpot.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"nya.pitpatpot.PitPatPot"
+		],
+		"client": [
+			"nya.pitpatpot.client.PitPatPotClient"
+		],
+		"modmenu": [
+			"nya.pitpatpot.client.PitPatPotModMenu"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*",
+		"cloth-config": ">=26.3.159"
+	},
+	"recommends": {
+		"modmenu": "*"
+	}
+}
